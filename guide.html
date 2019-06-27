@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	#nav{
+		width:950px;
+		height:350px;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	#nav ul li{
+		width: 180px;
+		height: 105px;
+		list-style: none;
+		float: left;
+		margin: 30px 5px;
+		position: relative;
+	}
+	#nav ul li.six{
+		margin-left: 100px;
+	}
+	#nav ul li:before{
+		content: "";
+		width: 180px;
+		height: 100px;
+		
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		transform: rotate(60deg);
+	}
+	#nav ul li:after{
+		content: "";
+		width: 180px;
+		height: 105px;
+		
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		transform: rotate(-60deg);
+	}
+	#nav ul li img{
+		position: absolute;
+		z-index:999;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		transition:width 1s,height 1s,transform 1s;
+	}
+	#nav ul li img:hover{
+			width: 340px;
+			height: 340px;
+			transform: rotate(360deg);
+		}
+#aa{
+			margin: auto auto;
+			width: 500px;
+			
+			background-color:#A2C59B;
+		}
+		#bb{
+			text-align: center;
+			margin-top: auto;
+		}
+		#zt{
+		font-family: "Microsoft Yahei", simSun, Arial;
+		font-size: 20px;
+		text-align: center;
+	}
+#bj
+	{
+		background-image:url("pics/11.gif");
+		background-repeat: repeat;
+	}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body id="bj" onLoad="MM_preloadImages('pics/bsgn.png','pics/hd.png')">
+<div id=nav>
+	<div>
+	<h2 id="zt">✈Welcom to XiHu✈</h2>
+	<h2 id="zt">☼请选择一个你喜欢的导游开启你的西湖之旅吧！☼</h2>
+	</div>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li class="six"><a href="duanqiao1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','pics/bsgn.png',1)"><img src="pics/timg (7).jpg" alt="" width="250" height="250" id="Image3"></a></li>
+		<li></li>
+		<li></li>
+		<li><a href="duanqiao2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','pics/hd.png',1)"><img src="pics/timg.jpg" alt="" width="250" height="250" id="Image4"></a></li>
+	</ul>
+</div>
+</body>
+</html>
