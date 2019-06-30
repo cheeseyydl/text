@@ -2,12 +2,21 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>选择小导游</title>
 <style type="text/css">
-	#nav{
+body {margin:0;}
+#box {
+	height: 620px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-image: url("pics/dybj.png");
+	background-position: 1000px 620px;
+}
+#nav{
 		width:950px;
 		height:350px;
-		margin-top: 50px;
+		margin-top: 0;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -49,10 +58,10 @@
 	#nav ul li img{
 		position: absolute;
 		z-index:999;
-		top: 0;
+		top: 350px;
 		bottom: 0;
 		left: 0;
-		right: 0;
+		right:0;
 		margin: auto;
 		transition:width 1s,height 1s,transform 1s;
 	}
@@ -75,11 +84,6 @@
 		font-family: "Microsoft Yahei", simSun, Arial;
 		font-size: 20px;
 		text-align: center;
-	}
-#bj
-	{
-		background-image:url("pics/11.gif");
-		background-repeat: repeat;
 	}
 </style>
 <script type="text/javascript">
@@ -107,22 +111,21 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 
-<body id="bj" onLoad="MM_preloadImages('pics/bsgn.png','pics/hd.png')">
+<body>
+<div id="box">
 <div id=nav>
-	<div>
-	<h2 id="zt">✈Welcom to XiHu✈</h2>
-	<h2 id="zt">☼请选择一个你喜欢的导游开启你的西湖之旅吧！☼</h2>
-	</div>
 	<ul>
 		<li></li>
 		<li></li>
 		<li></li>
 		<li></li>
-		<li class="six"><a href="duanqiao1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','pics/bsgn.png',1)"><img src="pics/timg (7).jpg" alt="" width="250" height="250" id="Image3"></a></li>
 		<li></li>
+		<li class="six"><a href="map1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','pics/bsgn.png',1)"><img src="pics/bsgndd.png" alt="" width="250" height="250" id="Image3"></a></li>
 		<li></li>
-		<li><a href="duanqiao2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','pics/hd.png',1)"><img src="pics/timg.jpg" alt="" width="250" height="250" id="Image4"></a></li>
+		<li><a href="map2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','pics/hd.png',1)"><img src="pics/hddd.png" alt="" width="250" height="250" id="Image4"></a></li>
 	</ul>
 </div>
+</div>
+
 </body>
 </html>
