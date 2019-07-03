@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>花港观鱼</title>
+<style type="text/css">
+body {margin:0;}
+#box {
+	height: 620px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-image:url("pics/hggybb.jpg");
+	background-position: 1000px 620px;
+}
+#stu3 {
+	position: absolute;
+	left: 691px;
+	top: 300px;
+}
+#showStr{
+	font-size: 18px;
+	color: #333;
+	font-family: "幼圆";
+	line-height: 34px;
+}
+#neirong {
+	width: 1000px;
+	position: absolute;
+	left:10px;
+	top:95px;
+}
+#m1 img{
+	position:absolute;
+	top:490px;
+	left:70px;}
+#m1 img:hover{
+	position:absolute;
+	top:500px;
+	left:60px;
+	width:110px;
+	height:110px;}
+#c1{
+	position: absolute;
+	top: 400px;
+	left: 200px;
+}
+	#bt
+	{
+		top: 10px;
+		left: 0px;
+		position: absolute;
+	}
+	#v{
+		position: absolute;
+		top: 95px;
+		left:540px;
+	}
+#dy img{
+		top:230px;
+		right: 20px;
+		position: absolute;
+	}
+#dy img:hover{
+		top:220px;
+		right: 20px;
+		position: absolute;
+	}
+#v{
+		position: absolute;
+		top: 95px;
+		left:510px;
+	}
+#m2 img{
+	position:absolute;
+	top:510px;
+	right:70px;}
+#m2 img:hover{
+	position:absolute;
+	top:510px;
+	right:70px;
+	width:160px;
+	height:110px;}
+#m3 img{
+	position:absolute;
+	top:30px;
+	right:70px;}
+#m3 img:hover{
+	position:absolute;
+	top:30px;
+	right:70px;
+	width:160px;
+	height:110px;}
+</style>
+<script type="text/javascript">
+function show1(e){
+    var aaa = e.name;
+    if(aaa == "zt"){
+        document.getElementById("c1").style.display = "block";
+    }
+}
+
+</script>
+</head>
+
+<body>
+<div id="box">
+<div id="dy">
+<a href="hggy1.html"><img src="pics/bsgndd.png" height="300" ></a>
+</div>
+<div id="neirong">
+<p id="showStr"></p>
+<p style="display:none" id="string">
+花港观鱼是由花、港、鱼为特色的风景点。西湖十景之一。
+地处苏堤南段西侧。1964年二期扩建工程告竣后，占地面
+积达20公顷。全园分为红鱼池、牡丹园、花港、大草坪、
+密林地五个景区。与雷峰塔、净慈寺隔苏堤相望。红鱼池
+位于园中部偏南处，是全园游赏的中心区域。池岸曲折自
+然，池中堆土成岛，池上架设曲桥，倚桥栏俯看，数千尾
+金鳞红鱼结队往来，泼刺戏水。
+</p>  
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},100)
+</script>
+</div>
+<div id="m1">
+<img src="pics/ywmj.png" width="100" height="100" onClick="show1(this)" name="zt">
+</div>
+<img src="pics/hggygl.png" width="400" height="200" id="c1" style="display:none" >
+<div id="bt">
+<img src="pics/hggybt.png">
+</div>
+<img src="pics/hggy1.png" width="260" height="260" id="v">
+<div id="m2">
+<a href="m61.html"><img src="pics/xyz.png" width="150" height="100"></a>
+</div>
+<div id="m3">
+<a href="sudichunxiao1.html"><img src="pics/syz.png" width="150" height="100"></a>
+</div>
+</div>
+</body>
+</html>

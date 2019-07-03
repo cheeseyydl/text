@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>断桥残雪</title>
+<title>平湖秋月</title>
 <style type="text/css">
 body {margin:0;}
 #box {
@@ -10,7 +10,7 @@ body {margin:0;}
 	width: 1000px;
 	margin: 0 auto;
 	position: relative;
-	background-image:url("pics/dqcxbb.jpg");
+	background-image:url("pics/phqybb.jpg");
 	background-position: 1000px 620px;
 }
 #stu3 {
@@ -18,6 +18,16 @@ body {margin:0;}
 	left: 691px;
 	top: 300px;
 }
+	#dy img{
+		top:230px;
+		right: 20px;
+		position: absolute;
+	}
+	#dy img:hover{
+		top:220px;
+		right: 20px;
+		position: absolute;
+	}
 #showStr{
 	font-size: 18px;
 	color: #333;
@@ -27,56 +37,55 @@ body {margin:0;}
 #neirong {
 	width: 1000px;
 	position: absolute;
-	left:20px;
-	top:75px;
+	left:70px;
+	top:95px;
 }
 #m1 img{
 	position:absolute;
-	top:500px;
-	left:50px;}
+	top:490px;
+	left:70px;}
 #m1 img:hover{
 	position:absolute;
 	top:500px;
-	left:20px;
+	left:60px;
 	width:110px;
 	height:110px;}
 #c1{
 	position: absolute;
 	top: 400px;
-	left: 160px;
+	left: 200px;
 }
-#m2 img{
-	position:absolute;
-	top:520px;
-	right:30px;}
-#m2 img:hover{
-	position:absolute;
-	top:520px;
-	right:30px;
-	width:160px;
-	height:110px;}
+	#bt
+	{
+		top: 10px;
+		left: 30px;
+		position: absolute;
+	}
 	#v{
 		position: absolute;
 		top: 95px;
-		left:500px;
+		left:510px;
 	}
-	#dy img{
-		top:240px;
-		right: 10px;
-		position: absolute;
-	}
-	#dy img:hover{
-		top:240px;
-		right: 20px;
-		position: absolute;
-		height: 305px;
-	}
-	#bt
-	{
-		top: 0px;
-		left: 2px;
-		position: absolute;
-	}
+#m2 img{
+	position:absolute;
+	top:510px;
+	right:70px;}
+#m2 img:hover{
+	position:absolute;
+	top:510px;
+	right:70px;
+	width:160px;
+	height:110px;}
+ #m3 img{
+	position:absolute;
+	top:30px;
+	right:70px;}
+#m3 img:hover{
+	position:absolute;
+	top:30px;
+	right:70px;
+	width:160px;
+	height:110px;}
 </style>
 <script type="text/javascript">
 function show1(e){
@@ -91,14 +100,17 @@ function show1(e){
 
 <body>
 <div id="box">
+<div id="dy">
+<a href="phqy2.html"><img src="pics/hddd.png" height="300" ></a>
+</div>
 <div id="neirong">
 <p id="showStr"></p>
 <p style="display:none" id="string">
-断桥残雪，西湖十景之一，断桥位于白堤始端。断
-桥之名得于唐朝，当时是一座石桥，宋代称保佑桥，
-元代称段家桥。古时桥上有门，门上有檐，下雪时
-中间一段的雪都在门檐上，桥上只有两头有雪，远
-远望去桥像断了一样，所以称作断桥。
+平湖秋月，西湖十景之一。南宋时，被列为西湖十景
+之三，元代又称之为“西湖夜月”而列入钱塘十景。“
+平湖秋月”景观是指：每当清秋气爽，西湖湖面平静
+如镜，皓洁的秋月当空，月光与湖水交相辉映，颇有
+“一色湖光万顷秋”之感，故题名“平湖秋月”。
 </p>  
 <script type="text/javascript">
   var index = 0;  
@@ -115,24 +127,20 @@ a.innerText = str.substring(0, index++);
 },100)
 </script>
 </div>
-
-<div id="dy">
-<a href="dq1.html"><img src="pics/bsgndd.png" height="300" ></a>
-</div>
 <div id="m1">
 <img src="pics/ywmj.png" width="100" height="100" onClick="show1(this)" name="zt">
 </div>
-<img src="pics/dqjs.png" width="400" height="200" id="c1" style="display:none" >
-<div id="m2">
-<div id="m2">
-<a href="m11.html"><img src="pics/xyz.png" width="150" height="100"></a>
-</div>
-</div>
-<img src="pics/cg.png" width="260" height="260" id="v">
+<img src="pics/phqygl.png" width="400" height="200" id="c1" style="display:none" >
 <div id="bt">
-<img src="pics/dqbt.png">
+<img src="pics/phqybt.png">
+</div>
+<img src="pics/phqy1.png" width="260" height="260" id="v">
+<div id="m2">
+<a href="m22.html"><img src="pics/xyz.png" width="150" height="100"></a>
+</div>
+<div id="m3">
+<a href="duanqiao2.html"><img src="pics/syz.png" width="150" height="100"></a>
 </div>
 </div>
-
 </body>
 </html>

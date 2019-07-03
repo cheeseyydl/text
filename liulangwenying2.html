@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>柳浪闻莺</title>
+<style type="text/css">
+body {margin:0;}
+#box {
+	height: 620px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-image:url("pics/llwybb.jpg");
+	background-position: 1000px 620px;
+}
+#stu3 {
+	position: absolute;
+	left: 691px;
+	top: 300px;
+}
+	#dy img{
+		top:260px;
+		right: 10px;
+		position: absolute;
+	}
+	#dy img:hover{
+		top:280px;
+		right: 20px;
+		position: absolute;
+	}
+#showStr{
+	font-size: 18px;
+	color: #333;
+	font-family: "幼圆";
+	line-height: 34px;
+}
+#neirong {
+	width: 1000px;
+	position: absolute;
+	left:0px;
+	top:110px;
+}
+#m1 img{
+	position:absolute;
+	top:490px;
+	left:70px;}
+#m1 img:hover{
+	position:absolute;
+	top:500px;
+	left:60px;
+	width:110px;
+	height:110px;}
+#c1{
+	position: absolute;
+	top: 410px;
+	left: 200px;
+}
+	#bt
+	{
+		top: 10px;
+		left: 0px;
+		position: absolute;
+	}
+	#v{
+		position: absolute;
+		top: 95px;
+		left:520px;
+	}
+#m2 img{
+	position:absolute;
+	top:550px;
+	right:60px;}
+#m2 img:hover{
+	position:absolute;
+	top:550px;
+	right:70px;
+	width:160px;
+	height:70px;}
+ #m3 img{
+	position:absolute;
+	top:50px;
+	right:60px;}
+#m3 img:hover{
+	position:absolute;
+	top:50px;
+	right:70px;
+	width:160px;
+	height:70px;}
+</style>
+<script type="text/javascript">
+function show1(e){
+    var aaa = e.name;
+    if(aaa == "zt"){
+        document.getElementById("c1").style.display = "block";
+    }
+}
+
+</script>
+</head>
+
+<body>
+<div id="box">
+<div id="dy">
+<a href="llwy2.html"><img src="pics/hddd.png" height="300" ></a>
+</div>
+<div id="neirong">
+<p id="showStr"></p>
+<p style="display:none" id="string">
+柳浪闻莺是西湖十景之五，位于西湖东南岸，清波门处的大
+型公园。分友谊、闻莺、聚景、南园四个景区。柳丛衬托着
+紫楠、雪松、广玉兰、梅花等异木名花。南宋时，这里是京
+城最大的御花园，称聚景园。当时园内有会芳殿和三堂、九
+亭，以及柳浪桥和学士桥。清代恢复柳浪闻莺旧景。有柳洲
+之名。其间黄莺飞舞，竞相啼鸣，故有“柳浪闻莺”之称。
+</p>  
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},100)
+</script>
+</div>
+<div id="m1">
+<img src="pics/ywmj.png" width="100" height="100" onClick="show1(this)" name="zt">
+</div>
+<img src="pics/llwygl.png" width="400" height="200" id="c1" style="display:none" >
+<div id="bt">
+<img src="pics/llwybt.png">
+</div>
+<img src="pics/llwy1.png" width="260" height="260" id="v">
+<div id="m2">
+<a href="m2.html"><img src="pics/y-you.png" width="150" height="60"></a>
+</div>
+<div id="m3">
+<a href="nanpingwanzhong2.html"><img src="pics/y-zuo.png" width="150" height="60"></a>
+</div>
+</div>
+</body>
+</html>

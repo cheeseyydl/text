@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>南屏晚钟</title>
+<style type="text/css">
+body {margin:0;}
+#box {
+	height: 620px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-image:url("pics/npwzbb.jpg");
+	background-position: 1000px 620px;
+}
+#stu3 {
+	position: absolute;
+	left: 691px;
+	top: 300px;
+}
+	#dy img{
+		top:280px;
+		right: 10px;
+		position: absolute;
+	}
+	#dy img:hover{
+		top:290px;
+		right: 20px;
+		position: absolute;
+	}
+#showStr{
+	font-size: 18px;
+	color: #333;
+	font-family: "幼圆";
+	line-height: 34px;
+}
+#neirong {
+	width: 1000px;
+	position: absolute;
+	left:70px;
+	top:85px;
+}
+#m1 img{
+	position:absolute;
+	top:490px;
+	left:70px;}
+#m1 img:hover{
+	position:absolute;
+	top:500px;
+	left:60px;
+	width:110px;
+	height:110px;}
+#c1{
+	position: absolute;
+	top: 400px;
+	left: 200px;
+}
+	#bt
+	{
+		top: 10px;
+		left: 30px;
+		position: absolute;
+	}
+	#v{
+		position: absolute;
+		top: 95px;
+		left:540px;
+	}
+#m2 img{
+	position:absolute;
+	top:550px;
+	right:60px;}
+#m2 img:hover{
+	position:absolute;
+	top:550px;
+	right:70px;
+	width:160px;
+	height:70px;}
+ #m3 img{
+	position:absolute;
+	top:50px;
+	right:60px;}
+#m3 img:hover{
+	position:absolute;
+	top:50px;
+	right:70px;
+	width:160px;
+	height:70px;}
+</style>
+<script type="text/javascript">
+function show1(e){
+    var aaa = e.name;
+    if(aaa == "zt"){
+        document.getElementById("c1").style.display = "block";
+    }
+}
+
+</script>
+</head>
+
+<body>
+<div id="box">
+<div id="dy">
+<a href="npwz1.html"><img src="pics/bsgndd.png" height="300" ></a>
+</div>
+<div id="neirong">
+<p id="showStr"></p>
+<p style="display:none" id="string">
+南屏晚钟，是西湖十景中问世最早的景目。北宋画家张择端
+曾经画过《南屏晚钟图》。尽管此图远不如他的《清明上河
+图》那么蜚声画坛，但却被记载于明人《天水冰山录》中。
+西湖十景之九的“南屏晚钟”即指南屏山净慈寺傍晚的钟声，
+南屏山在杭州西湖南岸、玉皇山北，九曜山东。主峰高百米
+，林木繁茂，石壁如屏，北麓山脚下是净慈寺，傍晚钟声清
+越悠扬。
+</p>  
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},100)
+</script>
+</div>
+<div id="m1">
+<img src="pics/ywmj.png" width="100" height="100" onClick="show1(this)" name="zt">
+</div>
+<img src="pics/npwzgl.png" width="400" height="200" id="c1" style="display:none" >
+<div id="bt">
+<img src="pics/npwzbt.png">
+</div>
+<img src="pics/npwz1.png" width="260" height="260" id="v">
+<div id="m2">
+<a href="m91.html"><img src="pics/y-you.png" width="150" height="60"></a>
+</div>
+<div id="m3">
+<a href="leifengxizhao1.html"><img src="pics/y-zuo.png" width="150" height="60"></a>
+</div>
+</div>
+</body>
+</html>
