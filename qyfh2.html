@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>平湖秋月</title>
+<style type="text/css">
+body {margin:0;}
+#box {
+	height: 620px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-image:url("pics/qyfh1.jpg");
+	background-position: 1000px 620px;
+}
+
+	#v{
+		position: absolute;
+		top: 20px;
+		left:80px;
+	}
+	#dy{
+		top:190px;
+		right:70px;
+		position: absolute;
+	}
+#showStr{
+	font-size: 15px;
+	color: #333;
+	font-family: "幼圆";
+	line-height: 24px;
+}
+#neirong {
+	width: 1000px;
+	position: absolute;
+	left:80px;
+	top:430px;
+}
+#m2 img{
+	position:absolute;
+	top:510px;
+	right:70px;}
+#m2 img:hover{
+	position:absolute;
+	top:510px;
+	right:70px;
+	width:160px;
+	height:110px;}
+ #m3 img{
+	position:absolute;
+	top:30px;
+	right:80px;}
+#m3 img:hover{
+	position:absolute;
+	top:30px;
+	right:80px;
+	width:160px;
+	height:110px;}
+	#bt
+	{
+		top: 0px;
+		left: 20px;
+		position: absolute;
+	}
+</style>
+</head>
+
+<body>
+<div id="box">
+<div id="v">
+<video src="video/pinghuqiuyue.mp4" width="520" height="550" controls="controls">
+</video>
+</div>
+<div id="neirong">
+<p id="showStr"></p>
+<p style="display:none" id="string">
+现在是我们旅程的第三站——曲院风荷！曲院风荷在较为开阔的水面中央或
+小水面有着大面积的片植荷花，充分体现荷花景观的群体美，让大家感受
+到“接天莲叶无穷碧，映日荷花别样红”的气势。曲园风荷独特的“荷”文化
+串联成了现在大家所熟知的西湖独有夏季景致，为西湖再添一份靓丽。
+</p>  
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},100)
+</script>
+</div>
+<div id="dy">
+<img src="pics/hddd.png" height="350" >
+</div>
+<div id="m2">
+<a href="m31.html"><img src="pics/xyz.png" width="150" height="100"></a>
+</div>
+<div id="m3">
+<a href="pinghuqiuyue1.html"><img src="pics/syz.png" width="150" height="100"></a>
+</div>
+<div id="bt">
+<img src="pics/qyfhbt.png">
+</div>
+</div>
+
+</body>
+</html>
