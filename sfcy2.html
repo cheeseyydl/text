@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>双峰插云</title>
+<style type="text/css">
+body {margin:0;}
+#box {
+	height: 620px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-image:url("pics/sfcy11.jpg");
+	background-position: 1000px 620px;
+}
+
+	#v{
+		position: absolute;
+		top: 20px;
+		left:65px;
+	}
+	#dy{
+		top:190px;
+		right:70px;
+		position: absolute;
+	}
+#showStr{
+	font-size: 15px;
+	color: #333;
+	font-family: "幼圆";
+	line-height: 24px;
+}
+#neirong {
+	width: 1000px;
+	position: absolute;
+	left:80px;
+	top:430px;
+}
+#m2 img{
+	position:absolute;
+	top:510px;
+	right:70px;}
+#m2 img:hover{
+	position:absolute;
+	top:510px;
+	right:70px;
+	width:160px;
+	height:110px;}
+ #m3 img{
+	position:absolute;
+	top:30px;
+	right:80px;}
+#m3 img:hover{
+	position:absolute;
+	top:30px;
+	right:80px;
+	width:160px;
+	height:110px;}
+	#bt
+	{
+		top: 0px;
+		left: 20px;
+		position: absolute;
+	}
+</style>
+</head>
+
+<body>
+<div id="box">
+<div id="v">
+<video src="video/pinghuqiuyue.mp4" width="520" height="550" controls="controls">
+</video>
+</div>
+<div id="neirong">
+<p id="showStr"></p>
+<p style="display:none" id="string">
+经过我们艰辛的跋山涉水，终于来到了我们的第四站——双峰插云！双峰
+插云中的“双峰”指的是北高峰和南高峰，两座高峰高高耸立于云端，在
+远处观望时，烟雾缭绕，会让人有高峰直插云端的错觉。登上高峰后，
+俯视西湖，可观赏到西湖的全貌。比起大家平时所看的西湖，别有一番
+滋味。
+</p>  
+<script type="text/javascript">
+  var index = 0;  
+  var str = document.getElementById("string").innerHTML;  
+  setInterval(function() {  
+   if(index == str.length) { 
+//清除定时器
+clearInterval();
+//若要让效果无限循环，把index归0即可
+// index = 0;
+}  
+var a = document.getElementById("showStr")
+a.innerText = str.substring(0, index++);
+},100)
+</script>
+</div>
+<div id="dy">
+<img src="pics/hddd.png" height="350" >
+</div>
+<div id="m2">
+<a href="m42.html"><img src="pics/xyz.png" width="150" height="100"></a>
+</div>
+<div id="m3">
+<a href="quyuanfenghe2.html"><img src="pics/syz.png" width="150" height="100"></a>
+</div>
+<div id="bt">
+<img src="pics/sfcybt.png">
+</div>
+</div>
+
+</body>
+</html>
