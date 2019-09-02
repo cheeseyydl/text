@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>知识小问答</title>
+	 <style type="text/css">
+     *{margin: 0; padding: 0;border: 0;}
+	 * {
+        padding: 0;
+        margin: 0;
+       }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+	body {margin:0;}
+#box {
+	height: 620px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	background-position: 1000px 620px;
+	background-image: url(pics/01.jpg);
+	}
+	#a1{
+			 position: absolute;
+			 top: 30px;
+			 left: 35px;
+		 }
+	#a2{
+			 position: absolute;
+			 top: 150px;
+			 left: 200px;
+		 }
+	#a3{
+	position: absolute;
+	top: 210px;
+	left: 275px;
+	width: 470px;
+	height: 300px;
+	font-family:"仿宋";
+	font-weight: bold;
+	color: #129D9E;
+         }
+    #a4{
+	position: absolute;
+	top: 90px;
+	left: 50px;
+	font-family: "仿宋";
+	color: #129D9E;
+	font-size: 20px;
+         }
+    #a5{
+	position:absolute;
+	top:90px;
+	left:290px;
+	font-family:"仿宋";
+	color: #129D9E;
+	font-size: 20px;
+         }
+    #a6{
+	position:absolute;
+	top:150px;
+	left:50px;
+	font-family:"仿宋";
+	color: #129D9E;
+	font-size: 20px;
+}
+    #a7{
+	position:absolute;
+	top:150px;
+	left:290px;
+	font-family:"仿宋";
+	color: #129D9E;
+	font-size: 20px;
+}
+#zqda{
+	
+	font-family: "仿宋";
+	color:#E20407;
+    font-weight:bold;
+	height: 30px;
+	width: 130px;
+	font-size: 21px;
+	border-radius: 5px;
+	position: absolute;
+	left: 320px;
+	top: 230px;
+	}		 
+
+#m2 img{
+	position:absolute;
+	top:510px;
+	right:70px;}
+#m2 img:hover{
+	position:absolute;
+	top:510px;
+	right:70px;
+	width:160px;
+	height:110px;}
+    #m3 img{
+	        position:absolute;
+	        top:510px;
+	        left:70px;
+	  }
+    #m3 img:hover{
+	position:absolute;
+	top:510px;
+	left:70px;
+	width:160px;
+	height:110px;
+		      }
+     </style>
+<script type="text/javascript">
+function myFunction()
+{
+	var abc=document.myform.answer.value;
+	if(abc=="answer1")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else if(abc=="answer2")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else if(abc=="answer3")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else if(abc=="answer4")
+	{
+		document.getElementById("zqda").style.display = "block";
+	}
+	else
+	{
+		document.getElementById("zqda").style.display = "block";
+ 
+}
+}
+</script>
+
+</head>
+<body>
+<div id="box">
+<div id="a1">
+  <img src="pics/testtishi4.PNG" width="970" height="100" alt=""/></div>
+<div id="a2">
+  <img src="pics/biankuang1.png" width="600" height="361" alt=""/> </div>
+<div id="a3">
+<h2>2&nbsp;.“接天莲叶无穷碧，映日荷花别样红”是描写哪个景点的诗句？</h2>
+<form action="" method="post" name="myform" id="myform">
+<input type="button" value="A.&nbsp断桥残雪" name="answer" onClick="myFunction()" id="a4"/>
+<input type="button" value="B.&nbsp曲院风荷" name="answer" onClick="myFunction()" id="a5" />
+<input type="button" value="C.&nbsp雷峰夕照" name="answer" onClick="myFunction()" id="a6" />
+<input type="button" value="D.&nbsp花港观鱼" name="answer" onClick="myFunction()" id="a7"/>
+<div id="zqda" style="display:none">正确答案：B</div>
+</form>
+</div>
+<div id="m2">
+<a href="test3.html"><img src="pics/15.png" width="150" height="100"></a>
+</div>
+<div id="m3">
+<a href="test1.html"><img src="pics/16.png" width="150" height="100"></a>
+</div>
+</div>
+</body>
+</html>
