@@ -10,122 +10,144 @@ body {margin:0;}
 	width: 1000px;
 	margin: 0 auto;
 	position: relative;
-	background-image: url("pics/dybj.png");
-	background-position: 1000px 620px;
+	background-image: url("pics/dybja.PNG");}
+#neirong {
+	width: 1000px;
+	text-align: center;}
+#stu4 {
+	position:absolute;
+	top:240px;
+	right:110px;
 }
-#nav{
-		width:950px;
-		height:350px;
-		margin-top: 0;
-		margin-left: auto;
-		margin-right: auto;
+#stu5 {
+	position:absolute;
+	top:240px;
+	left:110px;}
+.st4 img:hover {
+	position:absolute;
+	top:275px;
+	right:110px;
+	width:280px;
+	height:280px;}
+.st5 img:hover {
+	position:absolute;
+	top:275px;
+	left:110px;
+	width:280px;
+	height:280px;}
+#an1{
+		position:absolute;
+		top:500px;
+		left :230px;
 	}
-	*{
-		padding: 0;
-		margin: 0;
+#an2{
+		position:absolute;
+		top:500px;
+		right:180px;
 	}
-	#nav ul li{
-		width: 180px;
-		height: 105px;
-		list-style: none;
-		float: left;
-		margin: 30px 5px;
-		position: relative;
+#label6 {
+	position:absolute;
+	top:260px;
+	left:350px;
+	width: 320px;
+	height: 320px;
+	z-index:10;
 	}
-	#nav ul li.six{
-		margin-left: 100px;
+#label7 {
+	position: absolute;
+	left: 350px;
+	top: 260px;
+	width: 320px;
+	height: 320px;
+	z-index:10;
 	}
-	#nav ul li:before{
-		content: "";
-		width: 180px;
-		height: 100px;
-		
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		transform: rotate(60deg);
-	}
-	#nav ul li:after{
-		content: "";
-		width: 180px;
-		height: 105px;
-		
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		transform: rotate(-60deg);
-	}
-	#nav ul li img{
-		position: absolute;
-		z-index:999;
-		top: 350px;
-		bottom: 0;
-		left: 0;
-		right:0;
-		margin: auto;
-		transition:width 1s,height 1s,transform 1s;
-	}
-	#nav ul li img:hover{
-			width: 340px;
-			height: 340px;
-			transform: rotate(360deg);
-		}
-#aa{
-			margin: auto auto;
-			width: 500px;
-			
-			background-color:#A2C59B;
-		}
-		#bb{
-			text-align: center;
-			margin-top: auto;
-		}
-		#zt{
-		font-family: "Microsoft Yahei", simSun, Arial;
-		font-size: 20px;
-		text-align: center;
+	#ztt{
+		position:absolute;
+		top:20px;
+		left :100px;
 	}
 </style>
 <script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+function mouseOutPic6() 
+{ if(window.event.toElement.id!="teacher") label6.style.visibility = "hidden"; } 
+function mouseOverPic6(imgSrc)   
+{ 
+var seeBig = document.getElementById("label6"); 
+var newImg = document.createElement("img");  
+newImg = "<img src=\'" + imgSrc + "\'/>";  
+seeBig.innerHTML = newImg;     } 
+	
+function mouseOutPic7() 
+{ if(window.event.toElement.id!="teacher") label7.style.visibility = "hidden"; } 
+function mouseOverPic7(imgSrc)   
+{ 
+var seeBig = document.getElementById("label7"); 
+var newImg = document.createElement("img");  
+newImg = "<img src=\'" + imgSrc + "\'/>";  
+seeBig.innerHTML = newImg;     } 
+
+
+function PlaySound6(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
 }
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+function StopSound6(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+//7
+function PlaySound7(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+function StopSound7(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
 }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
 </script>
 </head>
 
 <body>
 <div id="box">
-<div id=nav>
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li class="six"><a href="map1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','pics/bsgn.png',1)"><img src="pics/bsgndd.png" alt="" width="250" height="250" id="Image3"></a></li>
-		<li></li>
-		<li><a href="map2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','pics/hd.png',1)"><img src="pics/hddd.png" alt="" width="250" height="250" id="Image4"></a></li>
-	</ul>
+<div id="neirong">
+<div id="ztt">
+<img src="pics/dyzt.png" width="900" height="200">
 </div>
+<a href="#" class="st4"> 
+<img src="pics/hddd.png" width="270" height="270" id="stu4" 
+onmouseover="mouseOverPic6('pics/hd.png'); label6.style.visibility='visible';PlaySound6('sound6')" 
+onmouseout="mouseOutPic6();StopSound6('sound6')">
+<audio controls preload id="sound6" hidden>
+  <source src=" audio/介绍.mp3" type="audio/mp3" />
+  <source src=" audio/介绍.ogg" type="audio/ogg" />
+<object data=" audio/介绍.ogg ">
+<embed src=" audio/介绍.mp3" />
+</object>
+</audio><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','pics/hd.png',1)"></a>
+<div id="label6" style="visibility:hidden;"> </div>
+<div id="an2">
+<a href="map2.html"><img src="pics/djan.png" width="100px" height="100px"></a>
 </div>
 
+<a href="#" class="st5"> 
+<img src="pics/bsgndd.png" width="270" height="270" id="stu5" 
+onmouseover="mouseOverPic7('pics/bsgn.png'); label7.style.visibility='visible';PlaySound7('sound7')" 
+onmouseout="mouseOutPic7();StopSound7('sound7')">
+<audio controls preload id="sound7" hidden>
+  <source src=" audio/巴斯光年自我介绍.m4a" type="audio/mp3" />
+  <source src=" audio/巴斯光年自我介绍.ogg" type="audio/ogg" />
+<object data=" audio/巴斯光年自我介绍.ogg ">
+<embed src=" audio/巴斯光年自我介绍.m4a" />
+</object>
+</audio><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','pics/bsgn.png',1)"></a>
+<div id="label7" style="visibility:hidden;"> </div>
+<div id="an1">
+<a href="map1.html"><img src="pics/djan.png" width="100px" height="100px"></a>
+</div>
+</div>
+</div>
 </body>
 </html>
